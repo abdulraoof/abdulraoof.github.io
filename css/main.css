@@ -1,0 +1,61 @@
+body {
+    width: 90%;
+    padding-left: 5%;
+}
+
+/*************** header ****************/
+
+#top_nav {
+    padding-bottom: 0.625em; /* 10px /16px */;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.625em /* 10px / 16px */;
+}
+
+#top_nav h1 {
+}
+
+#top_nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+#top_nav ul li {
+    padding: 0.625em 0.625em 0.625em 0.625em;
+    display: inline-block;
+}
+
+#top_nav ul li:first-child{
+    float: left;
+    padding-left: 0;
+}
+
+#top_nav ul li:last-child{
+    padding-right: 0;
+}
+/****************** footer ********************/
+
+footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 0.625em 0px 0.625em 0px;
+    margin: 0.625em 0px 0.625em 0px;
+}
+/****************** about page ****************/
+
+/****************** collection page ***********/
+
+/****************** writings ******************/
+
+/******************* home *********************/
+#about {
+}
+
+#posts_list {
+    margin: 1.5em 0 1.5em 0;
+    padding: 1em 0 1em 0;
+}
+
+#posts_list h2 {
+    margin: 0 0 1.5em 0;
+}
