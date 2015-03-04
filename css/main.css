@@ -1,13 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+
+
 body {
     width: 90%;
     padding-left: 5%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*************** header ****************/
 
 #top_nav {
     padding-bottom: 0.625em; /* 10px /16px */;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.9);
     margin-bottom: 0.625em /* 10px / 16px */;
 }
 
@@ -18,28 +23,46 @@ body {
     margin: 0;
     padding: 0;
     text-align: right;
+    list-style: none;
 }
 
 #top_nav ul li {
     padding: 0.625em 0.625em 0.625em 0.625em;
     display: inline-block;
+    color: rgba(79, 68, 68, 0.9);
+    font-size: 2em;
 }
 
 #top_nav ul li:first-child{
     float: left;
     padding-left: 0;
+/*    font-weight: 600;*/
 }
 
 #top_nav ul li:last-child{
     padding-right: 0;
 }
+
+#top_nav ul li a {
+    color: rgba(12, 12, 12, 0.68);
+    text-decoration: none;
+}
+
+#top_nav ul li:first-child a {
+    text-decoration: none;
+}
 /****************** footer ********************/
 
 footer {
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(238, 238, 238, 0.9);
     text-align: center;
     padding: 0.625em 0px 0.625em 0px;
     margin: 0.625em 0px 0.625em 0px;
+    font-size: .75em;
+}
+
+#content {
+        text-align: center;
 }
 /****************** about page ****************/
 
@@ -49,6 +72,8 @@ footer {
 
 /******************* home *********************/
 #about {
+    line-height: 2em;
+    font-size: 1.2em;
 }
 
 #posts_list {
@@ -57,5 +82,22 @@ footer {
 }
 
 #posts_list h2 {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1em 0;
+    font-size: 2em;
+    color: rgba(255, 20, 20, 0.68);
 }
+
+#posts_list ul {
+    list-style: none;
+}
+
+#posts_list ul li {
+    margin: 0 0 1em 0;
+}
+
+
+
+
+
+
+
