@@ -18,3 +18,5 @@ efflorescere sed sed sint proident possumus. Ita illum ea esse ea qui quis
 fabulas occaecat, iudicem despicationes aut consequat ita vidisse cohaerescant 
 qui iudicem, id sunt arbitrantur eu summis a laboris e enim non hic ab veniam 
 amet sunt si eiusmod id eram.
+
+![Squirrel Photo]({{ site.url }}/assets/squirel.jpg)
