@@ -1,7 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
-
-
 body {
     width: 90%;
     padding-left: 5%;
@@ -9,48 +7,49 @@ body {
 }
 
 /*************** header ****************/
-
-#top_nav {
-    padding-bottom: 0.625em; /* 10px /16px */;
+header {
+    padding: 1.25em 1.25em;
     border-bottom: 1px solid rgba(238, 238, 238, 0.9);
-    margin-bottom: 0.625em /* 10px / 16px */;
+}
+#logo {
+    color: rgba(79, 68, 68, 0.9);
+    font-size: 2em;
 }
 
-#top_nav h1 {
+nav {
+    padding-bottom: 0.625em; /* 10px /16px */;
+    margin-bottom: 0.625em; /* 10px / 16px */
+    position: absolute;
+    top: 0;
+    right: 5%;
 }
 
-#top_nav ul {
+nav h1 {
+}
+
+nav ul {
     margin: 0;
     padding: 0;
     text-align: right;
     list-style: none;
 }
 
-#top_nav ul li {
+nav ul li {
     padding: 0.625em 0.625em 0.625em 0.625em;
     display: inline-block;
     color: rgba(79, 68, 68, 0.9);
     font-size: 2em;
 }
 
-#top_nav ul li:first-child{
-    float: left;
-    padding-left: 0;
-/*    font-weight: 600;*/
-}
-
-#top_nav ul li:last-child{
+nav ul li:last-child{
     padding-right: 0;
 }
 
-#top_nav ul li a {
+nav ul li a, #logo a {
     color: rgba(12, 12, 12, 0.68);
     text-decoration: none;
 }
 
-#top_nav ul li:first-child a {
-    text-decoration: none;
-}
 /****************** footer ********************/
 
 footer {
@@ -71,7 +70,7 @@ footer {
 
 #content {
 /*    text-align: center;*/
-    margin: auto 10% auto 10%;
+    margin: auto 10%;
     line-height: 1.8em;
 }
 
@@ -92,11 +91,11 @@ footer {
 #about {
     line-height: 2em;
     font-size: 1.2em;
+    margin: 1.5em 0 0 0;
 }
 
 #posts_list {
     margin: 1.5em 0 1.5em 0;
-    padding: 1em 0 1em 0;
 }
 
 #posts_list h2 {
@@ -113,7 +112,62 @@ footer {
     margin: 0 0 1em 0;
 }
 
+/****************************Media Queries *****************************/
+@media(max-width: 480px){
+    body, header, content, nav {
+        width: 100%;
+        margin: auto 0;
+        padding: auto 0;
+        text-align: auto;
+    }
+    nav {
+        position: static;
+        background: #143; 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    nav ul {
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding:0 0 0.5em 0;
+    }
+    nav ul li:first-child{
+        padding-top: 0.5em;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    
+}
 
+@media(max-width: 800px){
+    #logo{
+        display: block;
+        text-align: center;
+    }
+    nav {
+        padding: 0;
+        width: 90%;
+        top: 4.5625em;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    nav ul li {
+        font-size: 1.5em;
+    }
+    nav ul li:last-child{
+        padding-right: .625em;
+    }
+    
+    #content{
+        margin-top: 4.5em;
+    }
+}
 
 
 
