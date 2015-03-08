@@ -190,8 +190,8 @@ footer {
         margin-top: 0;
     }
     #content img {
-        margin:1.25em 0%;
-/*        width: 100%;*/
+        margin:1.25em -3% 1.25em -3%;
+        width: 106%;
         
     }
     #about {
