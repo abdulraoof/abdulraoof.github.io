@@ -140,10 +140,14 @@ footer {
         padding-right: .625em;
     }
     
-    #content{
+    #content {
         margin-top: 4.5em;
         margin-left: 0;
         margin-right: 0;        
+    }
+    #content img {
+        margin:1.25em -1.25em;
+        width: calc(100% + 2.5em);
     }
 }
 
@@ -199,7 +203,6 @@ footer {
         color: #fff;
         border-radius: 3px;
     }
-
 }
 
 
