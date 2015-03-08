@@ -169,7 +169,7 @@ footer {
         background: #143; 
         margin: 0;
         padding: 0;
-        width: calc(100% + 2.5em);
+        width: 100%;
     }
     nav ul {
     }
@@ -188,6 +188,10 @@ footer {
         margin-left: 3%;
         margin-right: 3%;
         margin-top: 0;
+    }
+    #content img {
+        margin:1.25em -3%;
+        width: 106%;
     }
     #about {
         margin-top: 1.5em;
