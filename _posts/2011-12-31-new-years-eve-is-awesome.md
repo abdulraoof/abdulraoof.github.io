@@ -1,7 +1,7 @@
 ---
 
 title: New year eve is awesome
-layout: default
+layout: post
 
 ---
 

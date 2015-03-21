@@ -1,7 +1,7 @@
 ---
 
 title: Nothing like anything
-layout: default
+layout: post
 
 ---
 

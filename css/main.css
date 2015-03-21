@@ -75,10 +75,15 @@ footer {
     line-height: 1.8em;
 }
 
-.post_title {
+.page_title {
     font-size: 2.2em;
     color: rgba(255, 20, 20, 0.68);
-    margin: 1em auto;/* 10px / 16px */
+    margin: 0.3 auto .5em auto;/* 10px / 16px */
+}
+.page_date {
+    font-size: 1.1em;
+    color: rgba(150, 150, 150, 1);
+    margin: 1em auto 0 auto;/* 10px / 16px */
 }
 
 #content p {

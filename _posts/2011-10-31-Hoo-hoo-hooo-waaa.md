@@ -1,10 +1,10 @@
 ---
 
 title: Hoo hoo hoo waaa
-layout: default
+layout: post
 
 ---
-{{ post.title }}
+
 Ad hic imitarentur. Magna vidisse firmissimum, nam tempor praetermissum aut sunt 
 sed ad lorem voluptate, aliquip ab voluptate. Amet philosophari vidisse eram 
 laboris. Quorum possumus quibusdam. Labore appellat illustriora ne ex an fugiat 
