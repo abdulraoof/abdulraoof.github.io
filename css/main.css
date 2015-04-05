@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
-
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
 body {
     width: 100%;
@@ -9,13 +9,13 @@ body {
 /************************ header **************************/
 header {
     height: 6.25em;
-    background: #e91e63;
+    background: #512DA8;
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
 #logo {
     border-radius: 50%;
-    border: solid 4px #e0f7fa;
+    border: solid 4px #ffffff;
     height: 3.125em;
     width: 3.125em;
     position: absolute;
@@ -26,7 +26,7 @@ header {
 
 header #menu {
     position: absolute;
-    border: solid 4px #e0f7fa;
+    border: solid 4px #ffffff;
     border-radius: 2px;
     top: 50%;
     transform: translateY(-50%);
@@ -34,11 +34,12 @@ header #menu {
     padding: 1em;
     font-size: 3.333333333333333% 1.5em;
     color: #fff;
+    font-weight: 600;
 
 }
 
 nav {
-    background: #e91e63;
+    background: #512DA8;
 }
 nav ul {
     list-style: none;
@@ -57,7 +58,8 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 /****************** footer ********************/
@@ -69,9 +71,13 @@ footer {
 footer p {
     font-family: 'Roboto', sans-serif;
     color: #212121;
-    font-size: .75em;
+    font-size: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+footer p a img {
+        height: 2em;
+    transform: translateY(25%);
 }
 
 /****************** about page ****************/
@@ -84,25 +90,27 @@ footer p {
 #content {
     width: 93.33333333333333%;
     margin: 2em 3.333333333333333% 1.5em 3.333333333333333%;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Droid Serif', serif;
     color: #212121;
 }
 .page_date {
     font-weight: bold;
     font-size: 1em;
     padding: 1em 0 0.5em 0px;
+    color: rgba(0,0,0,0.6);
+    text-transform: uppercase;
 }
 
 .page_title {
-    color: #e53935;
+    color: #6200EA;
     font-size: 1.75em;
     padding: 0 0 0.5em 0px;
 }
 
 #content p {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.6em;
     margin-bottom: 1.25em;
 }
@@ -154,7 +162,7 @@ footer p {
         padding: 0 0 0 2em;
     }
     footer {
-        background: #e91e63;
+        background: #512DA8;
     }
     footer p {
         color: #fff;
@@ -190,14 +198,14 @@ footer p {
     }
 
     .page_title {
-        color: #e53935;
-        font-size: 2.25em;
+        color: #6200EA;
+        font-size: 3em;
         padding: 0 0 0.5em 0px;
     }
     #content p {
-        font-size: 1.25em;
+        font-size: 1.5em;
         color: #333;
-        font-weight: 400;
+        font-weight: 200;
         line-height: 1.6em;
         margin-bottom: 1.25em;
     }
