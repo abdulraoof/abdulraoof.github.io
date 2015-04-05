@@ -1,0 +1,48 @@
+header #logo {
+    margin-left: 10%;
+}
+nav ul li a:hover {
+    border-bottom: 3px solid #fff;
+}
+#content{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+nav{
+    right: 0;
+    margin-right: 10%;
+    box-shadow: none;
+}
+footer {
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+footer p {
+    color: #000;
+}
+footer p a {
+    color: #00f;
+}
+.page_date  {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em 0 0.5em 0px;
+}
+
+.page_title {
+    color: #6200EA;
+    font-size: 3em;
+    padding: 0 0 0.5em 0px;
+}
+#content #post p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 200;
+    line-height: 1.6em;
+    margin-bottom: 1.25em;
+}
+#content #post p::first-letter  {
+    font-size: 1.75em;
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+header {
+    height: 6.25em;
+}
+#logo {
+    border: solid 4px #ffffff;
+    height: 3.125em;
+    width: 3.125em;
+}
+header #menu {
+}
+#menu {
+    display: none;
+}
+nav {
+    position: absolute;
+    background: none;
+    top: 2.375em; 
+    right: 1.5em;
+    box-shadow: none;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding: 0 0 0 2em;
+    border: none;
+}
+
+nav ul li:last-child{
+    padding: 0 0 0 2em;
+}
+footer {
+    background: #512DA8;
+}
+footer p {
+    color: #fff;
+}
+footer p a {
+    color: #fff;
+}

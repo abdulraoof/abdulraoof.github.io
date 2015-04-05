@@ -8,16 +8,17 @@ body {
 
 /************************ header **************************/
 header {
-    height: 6.25em;
+    height: 4em;
     background: #512DA8;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 #logo {
     border-radius: 50%;
     border: solid 4px #ffffff;
-    height: 3.125em;
-    width: 3.125em;
+    height: 2em;
+    width: 2em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -26,20 +27,21 @@ header {
 
 header #menu {
     position: absolute;
-    border: solid 4px #ffffff;
-    border-radius: 2px;
+    border: solid 2px #ffffff;
+    border-radius: 4px;
     top: 50%;
     transform: translateY(-50%);
     right: 3.333333333333333%;
-    padding: 1em;
-    font-size: 3.333333333333333% 1.5em;
+    padding: .5em;
+    font-size: 3.333333333333333% 1em;
     color: #fff;
     font-weight: 600;
-
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 nav {
     background: #512DA8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 nav ul {
     list-style: none;
@@ -47,11 +49,13 @@ nav ul {
 }
 
 nav ul li {
-    padding-top: 1.5em;
+    padding: 0.75em 0;
+    border-bottom: 1px solid rgba(200,200,200,0.5);
 }
 
 nav ul li:last-child{
-    padding-bottom: 1.5em;
+    padding-bottom: 0.75em;
+    border: none;
 }
 
 nav ul li a {
@@ -75,17 +79,16 @@ footer p {
     padding-top: 1em;
     padding-bottom: 1em;
 }
-footer p a img {
-        height: 2em;
-    transform: translateY(25%);
+footer p a {
+    color: #00f;
+    font-size: 1em;
 }
 
-/****************** about page ****************/
+
 
 /****************** collection page ***********/
 
 /****************** writings ******************/
-
 
 #content {
     width: 93.33333333333333%;
@@ -96,7 +99,7 @@ footer p a img {
 .page_date {
     font-weight: bold;
     font-size: 1em;
-    padding: 1em 0 0.5em 0px;
+    padding: 1em 0 0.5em 0;
     color: rgba(0,0,0,0.6);
     text-transform: uppercase;
 }
@@ -104,116 +107,120 @@ footer p a img {
 .page_title {
     color: #6200EA;
     font-size: 1.75em;
-    padding: 0 0 0.5em 0px;
+    padding: 0 0 0.5em 0;
 }
 
-#content p {
+#content #post p, #content #about p {
     font-size: 1.2em;
     color: #333;
     font-weight: 200;
     line-height: 1.6em;
     margin-bottom: 1.25em;
 }
-#content p::first-letter  {
+#content #post p::first-letter  {
     font-size: 1.75em;
     font-weight: bold;
 }
-#content img {
+#content #post img {
     width: 100%;
+    margin-bottom: 1.25em;
+}
+.post_excerpt {
+    margin: 1em 0;
+}
+.post_excerpt p.test {
+    font-size: 1em;
+    color: #333;
+    font-weight: 200;
+    line-height: 1.6em;
     margin-bottom: 1.25em;
 }
 
 /******************* home *********************/
-#about {
-
+#content #about {
+    
+}
+#content #about p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 200;
+    line-height: 1.6em;
 }
 
 #posts_list {
 }
 
 #posts_list h2 {
+    color: #6200EA;
+    font-size: 2.5em;
+    padding: 0 0 0.5em 0;
 }
 
 #posts_list ul {
 }
 
 #posts_list ul li {
+    margin: 0 0 1em 0;
+}
+#posts_list ul .post_list_date {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+#posts_list ul li a{
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 200;
+    line-height: 1em;
+    margin-bottom: 1.25em;
 }
 
+#post_list ul li a:visited {
+}
+
+/****************** about page ****************/
+#about_me #greeting {
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 100px;
+}
+#about_me #me  {
+    width: 50%;
+    margin: 0 auto;
+}
+#about_me p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+#reach_out {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reach_out li {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+#reach_out li a img {
+    margin-bottom: 0.5em;
+    width: 90%;
+}
+
+#reach_out li a {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #673ab7;
+}
 /****************************Media Queries *****************************/
 
 @media(min-width: 30em){
-    #menu {
-        display: none;
-    }
-    nav {
-        position: absolute;
-        background: none;
-        top: 2.375em; 
-        right: 1.5em;
-    }
-    nav ul li {
-        display: inline-block;
-        padding: 0;
-        margin: 0;
-        padding: 0 0 0 2em;
-    }
-    nav ul li:last-child{
-        padding: 0 0 0 2em;
-    }
-    footer {
-        background: #512DA8;
-    }
-    footer p {
-        color: #fff;
-    }
 }
 
 @media(min-width: 50em){ 
-    header #logo {
-        margin-left: 6.666666666666666%;
-    }
-    nav ul li a:hover {
-        border-bottom: 3px solid #fff;
-    }
-    #content{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    header #menu {
-        margin-right: 6.666666666666666%;
-    }
-        footer {
-        background: #fff;
-        border-top: 1px solid #ddd;
-    }
-    footer p {
-        color: #000;
-    }
-   .page_date  {
-        font-weight: bold;
-        font-size: 1.5em;
-        padding: 1em 0 0.5em 0px;
-    }
-
-    .page_title {
-        color: #6200EA;
-        font-size: 3em;
-        padding: 0 0 0.5em 0px;
-    }
-    #content p {
-        font-size: 1.5em;
-        color: #333;
-        font-weight: 200;
-        line-height: 1.6em;
-        margin-bottom: 1.25em;
-    }
-    #content p::first-letter  {
-        font-size: 1.75em;
-        font-weight: bold;
-
-    }
 }
 
 

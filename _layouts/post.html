@@ -2,9 +2,11 @@
 <body>
     {% include header.html %}
     <div id="content">
-        <h4 class="page_date">{{ page.date | date_to_string }}</h4>
-        <h2 class="page_title">{{ page.title }}</h2>
-        {{ content }}
+        <div id="post">
+            <h4 class="page_date">{{ page.date | date_to_string }}</h4>
+            <h2 class="page_title">{{ page.title }}</h2>
+            {{ content }}
+        </div>
     </div>
     {% include nav.html %}
     {% include footer.html %}

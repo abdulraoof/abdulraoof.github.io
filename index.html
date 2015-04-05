@@ -6,13 +6,14 @@ layout: default
 ---
 <div id="about">
     <p>
-        Under constrution. See you later :) .
+        My thoughts on Everything.
     </p>
 </div>
 <div id="posts_list">
     <h2>Writings</h2>
     <ul>
         {% for post in site.posts %}
+        <span class="post_list_date">{{post.date | date_to_string}}</span>
         <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
