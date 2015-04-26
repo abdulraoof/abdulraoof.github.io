@@ -5,6 +5,7 @@ header {
     border: solid 4px #ffffff;
     height: 3.125em;
     width: 3.125em;
+    bottom: 1.34375em;
 }
 header #menu {
 }
@@ -14,7 +15,7 @@ header #menu {
 nav {
     position: absolute;
     background: none;
-    top: 2.375em; 
+    top: 2.5em; 
     right: 1.5em;
     box-shadow: none;
 }
@@ -37,4 +38,15 @@ footer p {
 }
 footer p a {
     color: #fff;
+}
+
+/********** POSTS LIST*******************/
+#posts_list ul li a {
+    font-size: 1.5em;
+}
+#posts_list h2 {
+    font-size: 3em;   
+}
+#content #posts_list p {
+    font-size: 1.2em;
 }

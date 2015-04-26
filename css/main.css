@@ -113,10 +113,10 @@ footer p a {
 }
 
 #content #post p, #content #posts_list p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #37474F;
     font-weight: 200;
-    line-height: 1.6em;
+/*    line-height: 1.6em;*/
     margin-bottom: 1.25em;
 }
 #content #post p::first-letter  {
@@ -142,19 +142,13 @@ footer p a {
 #content #about {
     
 }
-#content #posts_list p {
-    font-size: 1.2em;
-    color: #37474F;
-    font-weight: 200;
-    line-height: 1.6em;
-}
 
 #posts_list {
 }
 
 #posts_list h2 {
     color: #311B92;
-    font-size: 3em;
+    font-size: 2em;
     padding: 0 0 0 0;
     text-transform: uppercase;
     font-weight: 400;
@@ -162,6 +156,7 @@ footer p a {
 }
 
 #posts_list ul {
+    padding-top: 1em;
 }
 
 #posts_list ul li {
@@ -172,7 +167,7 @@ footer p a {
     margin-bottom: 1em;
 }
 #posts_list ul li a{
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #37474F;
     font-weight: 200;
     line-height: 1em;

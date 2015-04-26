@@ -46,3 +46,7 @@ footer p a {
     font-size: 1.75em;
     font-weight: bold;
 }
+
+#posts_list h2 {
+    font-size: 3em;
+}
