@@ -21,8 +21,11 @@ header {
     height: 2em;
     width: 2em;
     position: absolute;
+    top: 0.78125em;
+/*
     top: 50%;
     transform: translateY(-50%);
+*/
     margin-left: 3.333333333333333%;
 }
 
@@ -30,8 +33,11 @@ header #menu {
     position: absolute;
     border: solid 2px #ffffff;
     border-radius: 4px;
+    top: 1em;
+/*
     top: 50%;
     transform: translateY(-50%);
+*/
     right: 3.333333333333333%;
     padding: .5em;
     font-size: 3.333333333333333% 1em;
