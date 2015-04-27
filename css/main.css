@@ -122,16 +122,21 @@ footer p a {
     font-size: 1em;
     color: #37474F;
     font-weight: 200;
-/*    line-height: 1.6em;*/
+    line-height: 1.6em;
     margin-bottom: 1.25em;
 }
 #content #post p::first-letter  {
     font-size: 1.75em;
     font-weight: bold;
+    margin-right: .05em;
 }
 #content #post img {
     width: 100%;
     margin-bottom: 1.25em;
+}
+#content #post a {
+    color: #0277bd;
+    font-weight: 600;
 }
 .post_excerpt {
     margin: 1em 0;
