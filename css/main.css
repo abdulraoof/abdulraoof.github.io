@@ -171,6 +171,15 @@ ol li {
     margin-bottom: 0.5em;
     line-height:1.6em; 
 }
+.quote {
+    font-size: 1.2em;
+    color: #37474F;
+    font-style: italic;
+    line-height: 1.8em;
+    border-left: solid .25em #999;
+    padding-left: 0.8em;
+
+}
 /******************* home *********************/
 #content #about {
     
