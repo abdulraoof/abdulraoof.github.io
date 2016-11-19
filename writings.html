@@ -1,20 +1,5 @@
 ---
-
 layout: default
-
 ---
 
-<div id="posts_list">
-    <h2>Writings</h2>
-    <ul>
-        {% for post in site.posts %}
-        <span class="post_list_date">{{post.date | date_to_string}}</span>
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <div class="post_excerpt">
-                <p class="test">{{ post.content | strip_html | truncatewords: 30 }}</p>               
-            </div> 
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+<h2>You are reading and I am writing.</h2>

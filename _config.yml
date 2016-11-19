@@ -2,3 +2,9 @@ name: "abdulraoof.com"
 description: "web blog of abdul raoof"
 url: "abdulraoo.com"
 paginate: 5
+
+baseurl: /abdulraoof.github.io
+
+gems:
+- jekyll-compass
+- jekyll-paginate

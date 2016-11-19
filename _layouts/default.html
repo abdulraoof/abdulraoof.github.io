@@ -1,9 +1,19 @@
-{% include head.html %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guided Fantasy : Web home of abdul raoof</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
+</head>
 <body>
-    {% include header.html %}
-    <div id="content">
-        {{ content }}
-    </div>
-    {% include nav.html %}
-    {% include footer.html %}
+<header>
+<img src="">
+	{% include nav.html %}
+</header>
+
+{{content}}
+
+<script type="text/javascript" src="{{site.baseurl}}/script/main.js"></script>
 </body>
+</html>
