@@ -11,6 +11,11 @@ $primary-font: 'Merriweather', serif ;
 $secondary-font: 'Merriweather Sans', sans-serif;
 $type-color: #333;
 $break-small: 480px;
+// $primary-color: rgba(4,99,128,1);
+$primary-color: rgba(52,152,219,1);
+
+$secondary-color: rgba(25,52,65,1);
+
 
 
 @import 'grid';
@@ -50,23 +55,28 @@ p {
   margin-bottom: 1.3em;
 }
 
-.hero-para{
-  font-size: 1.236em;
-  margin-bottom: .6em;
-  line-height: 1.5;
+@mixin type-style($size, $transform, $spacing, $weight, $color){
+  font-size: $size;
+  text-transform: $transform;
+  font-family: $secondary-font;
+  letter-spacing: $spacing;
+  font-weight: $weight;
+  color: $color;
 }
 
-small, .font_small {
-  font-size: 0.618em;
-  text-transform: uppercase;
-  font-family: $secondary-font;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: $type-color;
+small {
+  @include type-style(0.618em, uppercase, 1px, 600,#555)
 }
 
-.seconday-type {
-  font-family: $secondary-font;
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  &:hover{
+    color: $secondary-color;
+  }
+  &:visited {
+  }
 }
 
 nav{
@@ -82,7 +92,6 @@ nav{
       a {
         @extend small;
         font-size: 0.8em;
-        text-decoration: none;
       }
     }
   }
@@ -98,11 +107,11 @@ footer {
   margin-top: 3em;
   border-top: 1px solid #eee;
   color: #666;
+  span {
+    @extend small;
+    font-weight: 400;
+  }
   nav {
-    small {
-      color: #666;
-      font-weight: 400;
-    }
     ul {
       float: right;
       li{
@@ -110,10 +119,19 @@ footer {
         a{
           @extend small;
           color: #666;
-          font-weight: 600;
-          font-size: 0.618em;
         }
       }
     }
+  }
+}
+
+.hero-para{
+  h4 {
+    font-family: $secondary-font;
+  }
+  p {
+    font-size: 1.236em;
+    margin-bottom: .6em;
+    line-height: 1.5;
   }
 }
