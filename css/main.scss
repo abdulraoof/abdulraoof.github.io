@@ -56,7 +56,14 @@ p {
   line-height: 1.5;
 }
 
-small, .font_small {font-size: 0.618em;}
+small, .font_small {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: $type-color;
+}
 
 .seconday-type {
   font-family: $secondary-font;
@@ -67,17 +74,14 @@ nav{
   padding: 3em 0 .75em 0;
   ul{
     li {
-      font-size: .8em;
       display: inline-block;
       padding: 0 .75em 0 0;
       &:last-child{
         padding-right: 0;
       }
       a {
+        @extend small;
         text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $type-color;
       }
     }
   }
@@ -90,16 +94,21 @@ header {
 }
 
 footer {
-  @extend header;
-  margin-bottom: 6em;
-
+  margin-top: 3em;
+  border-top: 1px solid #eee;
+  color: #666;
   nav {
-    float: right;
+    small {
+      color: #666;
+      font-weight: 400;
+    }
     ul {
+      float: right;
       li{
         a{
-          font-size: .75em;
-          color: #555;
+          @extend small;
+          color: #666;
+          font-weight: 600;
         }
       }
     }
