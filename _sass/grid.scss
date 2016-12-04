@@ -54,9 +54,9 @@ margin: 0 0 $pad 0;
 }
 
 .container {
-  max-width: 66.66%;
+  max-width: 50%;
   margin: 0 auto; 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
     max-width: 90%;
   }
 }
