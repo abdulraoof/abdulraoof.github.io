@@ -10,22 +10,11 @@
 <body>
 	<div class="container">
 		<header>
-			<img src="{{site.baseurl}}/assets/logo/logo-64.png">
+			<img id="logo" src="logo.svg" alt="It's home">
 			{% include nav.html %}
 		</header>
-		{{content}}
-		<footer>
-			<nav>
-				<ul>
-				 	<li><a href="#">instgram</a></li>
-				 	/
-				 	<li><a href="#">twitter</a></li>
-				 	/
-				 	<li><a href="#">linkedin</a></li>
-				 </ul>
- 				<span>&copy;2016 abdul raoof</span>
-			 </nav>
-		</footer>
+			{{content}}
+			{% include footer.html %}
 	</div>
 	<script type="text/javascript" src="{{site.baseurl}}/script/main.js"></script>
 </body>
