@@ -98,6 +98,16 @@ nav{
 
 }
 
+.home-nav{
+   li{
+    &:first-child{
+      display: none;
+      padding: 0;
+    }
+
+   } 
+}
+
 header {
   margin: 3em  0 3em 0;
   border-bottom: 1px solid #eee;
@@ -136,6 +146,7 @@ footer {
     }
   }
 }
+
 
 .hero-para{
   // h4 {

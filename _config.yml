@@ -3,6 +3,8 @@ description: "web blog of abdul raoof"
 url: "abdulraoo.com"
 paginate: 5
 
+permalink: pretty
+
 baseurl: /abdulraoof.github.io
 
 gems:
