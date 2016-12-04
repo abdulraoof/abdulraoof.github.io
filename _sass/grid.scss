@@ -54,9 +54,13 @@ margin: 0 0 $pad 0;
 }
 
 .container {
-  max-width: 50%;
-  margin: 0 auto; 
+  width: 50%;
+  margin: 0 auto;
+  max-width: 720px; 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    max-width: 90%;
+    width: 90%;
+  }
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1024px) {
+    width: 70%;
   }
 }
