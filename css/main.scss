@@ -138,9 +138,9 @@ footer {
 }
 
 .hero-para{
-  h4 {
-    font-family: $secondary-font;
-  }
+  // h4 {
+  //   font-family: $secondary-font;
+  // }
   p {
     font-size: 1.236em;
     margin-bottom: .6em;
@@ -150,4 +150,8 @@ footer {
 
 img {
   max-width: 100%;
+}
+
+em {
+  font-weight: 600;
 }
