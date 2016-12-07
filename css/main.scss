@@ -32,27 +32,30 @@ body {
   color: $type-color;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4 , h5{
   margin: 1.414em 0 0.5em;
   font-weight: 600;
   line-height: 1.2;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 6.854em;
   font-family: $secondary-font;
+  text-transform: uppercase;
 }
 
-h2 {font-size: 4.236em;}
+h1 { font-size: 4.236em;}
 
-h3 {font-size: 2.618em;}
+h2 {font-size: 2.618em;}
 
-h4 {font-size: 1.618em;}
+h3 {font-size: 1.618em;}
+
+h4 {font-size: 1.2em;}
+
+h5 {
+  font-size: 1em;
+  margin: 2em 0 .75em;
+}
 
 p {
   font-size: 1em;
-  margin-bottom: 1.3em;
+  margin-bottom: 1.2em;
 }
 
 @mixin type-style($size, $transform, $spacing, $weight, $color){
@@ -163,6 +166,20 @@ img {
   max-width: 100%;
 }
 
+img.flow-img {
+  margin: 1em 0 2em 0;
+  border-bottom: 1px solid #eee;
+}
+
 em {
   font-weight: 600;
+}
+
+ul.flow {
+  padding: 0px 0 1.2em 0;
+  list-style-type: circle;
+  li{
+    padding-bottom: 8px;
+    padding-left: 8px;
+  }
 }

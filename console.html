@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<h3>CONSOLE FOR EXOTEL</h3>
+<div class="hero-para">
+	<p>As a number of customers increases, the customer support operations need to streamline. Custom built internal tools can help to achieve that goal.</p>
+</div>
+
+<h4>THE CONTEXT</h4>
+<p>Exotel was having few tools to help support and account management operations. Some of them were command line tools, those usable only for Engineering teams.</p> 
+
+<h4>GOAL</h4>
+<p>The goal of the project was to improve customer experience by following means. Reduce response time of support tickets Provide quality resolutions for customer queries ExoConsole is the tool envisioned to achieve the above goal.</p>
+
+<h4>ABOUT THE TEAM</h4>
+<p>I was working with a product manager who handles internal tools. The engineering team was of two people. I was taking care of entire design process.</p>
+
+<h4>UNDERSTANDING THE PROBLEM</h4>
+<p>To start with we spent time with customer support and account management teams. It resulted in the following insights. There are a lot of to and from communication between customer support and engineering teams related to the tickets. Which results in an increase in response time. The debugging scripts available, are too fragmented. For people without higher technical skills, it is not accessible.</p>
+
+<h4>THE APPROACH</h4>
+<p>The ideas was to come with a tool where people can debug and track issues without any scripts. Over a period of time, the tool will evolve to support all the activities related to the tenants.</p>
+
+<h4>FIRST VERSION</h4>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/10.png">
+<p>The team came up with the first version which supports the following activities. List of issues - ongoing and resolved Tenants affected by those issues Status of support tickets The idea was to give to option to relate the customer support tickets with the ongoing issues. It would be helpful for the support team to respond fast without much help from engineering. The team implemented this version fast, based on paper sketches and whiteboarding. The intent was to use this version for exploring the issues.</p>
+
+<h4>SECOND VERSION</h4>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/5.png">
+<p>This time the goal was to address the issues holistically.</p>
+<p>We collected feedback on the first version and did follow up research. Based on that we decided to address the following.</p>
+<ul class="flow">
+	<li>How to simplify the debugging of issues</li>
+	<li>How to support adding extra features over time, without breaking navigation pattern.</li>
+	<li>How to organize information for better accessibility</li>
+	<li>How to improve customer communication related to ongoing issues</li>
+</ul>
+<h5>The Pattern Finder to simplify debugging</h5>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/5.png">
+<p>To simplify debugging the team came up with something we call Pattern Finder. Where people can input the callsids (unique id for a call). It will display the pattern of the call as given below.</p>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/6.png">
+<p>It will also display the possible issues related to that call. For example, say you were facing some issues with a couple of calls yesterday evening. At the same time, Exotel was having some issue with one of the servers. And customer raised a ticket about this today morning. Now using pattern finder customer support person can get all these details via pattern finder. She only needs to input the callsids.
+</p>
+
+<h5>An information architecture which supports growth</h5>
+<p>We needed to make sure that there is no need to change the structure of the application often. After many experimentations, we arrived at the below IA which supports the expectations.</p>
+<p>As you can see, there is a global navigation, which is the app sidebar. For customer specific page and other pages, there is a local navigation. Each of these information hierarchies is extensible. Besides, this gives a uniform navigation structure and information hierarchy across the application.</p>
+
+<h5>A tool for better customer communication</h5>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/7.png">
+<p>This version enabled customer communication from the context of an issue. It eliminates the need of going back and forth between tools. Also, it eliminates the possible errors that can happen otherwise.</p>
+
+
+<h5>A customer specific control panel</h5>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/3.png">
+<p>For each customer, there is a page where all the details for that customer are available. It helps customer support and account management teams to view and resolve customer queries fast.</p>
+
+<h5>A better way to share and discuss issues</h5>
+<img class="flow-img" src="{{site.baseurl}}/assets/images/console/8.png">
+<p>Each issue has a unique URL. The customer support person can use the copied URL and share it with others to have a discussion. </p>
