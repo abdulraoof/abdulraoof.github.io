@@ -2,115 +2,125 @@
 layout: default
 ---
 <h3>CONSOLE FOR EXOTEL</h3>
-<p class="lead">As the number of customers increases, the customer support operations need to be streamlined. Custom built internal tools can help to achieve that goal.</p>
+<p class="lead">As the number of customers increases, the customer support operations need to be streamlined. Internal tools can help to achieve that goal.</p>
 
 <section>
-	<h4>THE CONTEXT</h4>
-	<p>Exotel was having few tools to help support and account management operations. Some of them were command line tools. Those tools was not accessible for non engineering teams.</p> 
+    <h4>THE CONTEXT</h4>
+    <p>Exotel offers cloud telephony solutions for its customers. It has to deal with telephony infrastructure and cloud infrastructure to enable this services. Because of this, tracking and debugging issues involve a lot of complexities. It was having few tools to help its support teams. Some of them were command line tools and were not accessible for nonengineering teams.
+    </p> 
 </section>
 
 <section>
-	<h4>GOAL</h4>
-	<p>The goal of the project was to improve customer experience by following means. 
-	<ul>
-		<li>Reduce response time on support tickets</li>
-		<li>Provide quality resolutions for customer queries </li>
-	</ul>
-	<p>ExoConsole is the tool envisioned to achieve the above goal.</p>
+    <h4>GOAL</h4>
+    <p>The goal of the project was to improve customer experience by following means. 
+    <ul>
+        <li>Reduce response time on support tickets</li>
+        <li>Provide quality resolutions for customer queries </li>
+    </ul>
+    <p>ExoConsole is the tool envisioned to achieve the above goal.</p>
 </section>
 
 <section>
-	<h4>ABOUT THE TEAM</h4>
-	<p>I was working with a product manager who handles internal tools. The engineering team was of two people. I was taking care of entire design process.</p>
-</section>
-
-
-<section>
-	<h4>UNDERSTANDING THE PROBLEM : HOW TO UNDERSTAND A PROBLEM STATEMENT</h4>
-	<p>To start with I spent time with customer support and account management teams. It resulted in the following insights. Related to the tickets, there are lot of to and fro communication happeningbetween customer support and engineering teams. Which results in increase in response time. The debugging scripts available are too fragmented. Those are not accessible for people without much technical skills.</p>
+    <h4>THE TEAM</h4>
+    <p>I was working with a product manager who handles internal tools. The engineering team was of two people. I was taking care of entire design process.</p>
 </section>
 
 
 <section>
-	<h4>THE APPROACH</h4>
-	<p>The idea was to come up with a tool where people can debug and track issues without bothering engineering much. Over a period of time, the tool should evolve to support all the activities related to the tenants.</p>
+    <h4>UNDERSTANDING THE PROBLEM</h4>
+    <p>To start with I spent time with customer support and account management teams. It resulted in the following insights. Related to the tickets, there are a lot of to and fro communication happening between customer support and engineering teams. Which results in an increase in response time. The debugging scripts available are too fragmented. Those are not accessible for people without many technical skills.</p>
 </section>
 
 
 <section>
-	<h4>FIRST VERSION</h4>
-	<figure class="article-img">
-		<img src="{{site.baseurl}}/assets/images/console/10.png">
-		<figcaption>First version : home page</figcaption>
-	</figure>
-	<p>The team came up with the first version which supports the following activities.</p>
-	<ul>
-		<li>List of issues - ongoing and resolved</li>
-		<li>Tenants affected by those issues</li>
-		<li>Status of support tickets</li>
-	</ul>
-<p>
-  The idea was to give to option to relate the customer support tickets with the ongoing issues. It would be helpful for the support team to respond fast without much help from engineering. The team implemented this version fast, based on paper sketches and whiteboarding. The intent was to build a working version early on and build the other features on top of that.
-</p>
+    <h4>THE APPROACH</h4>
+    <p>The idea was to come up with a tool where people can debug and track issues without bothering engineering much. Over a period of time, the tool should evolve to support all the activities related to the tenants.</p>
+</section>
+
+
+<section>
+    <h4>FIRST RELEASE</h4>
+    <figure class="article-img">
+        <img src="{{site.baseurl}}/assets/images/console/10.png">
+        <figcaption>First version : home page</figcaption>
+    </figure>
+    <p>The team came up with the first version which supports the following activities.</p>
+    <ul>
+        <li>List of issues - ongoing and resolved</li>
+        <li>Tenants affected by those issues</li>
+        <li>Status of support tickets</li>
+    </ul>
+	<p>
+	  The idea was to give to option to relate the customer support tickets with the ongoing issues. It would be helpful for the support team to respond fast without much help from engineering. The team implemented this version fast, based on paper sketches and whiteboarding. The intent was to build a working version early on and build the other features on top of that.
+	</p>
 </section>
 
 <section>
-	<h4>SECOND VERSION</h4>
-	<figure class="article-img">
-		<img src="{{site.baseurl}}/assets/images/console/1.png">
-		<figcaption>second version: home page</figcaption>
-	</figure>	
-	<p>This time the goal was to address the issues holistically.</p>
-	<p>We collected feedback on the first version and and conducted follow up research. Based on that we decided to address the following.</p>
-	<ul>
-		<li>How to simplify issue debuggin in the context of support tickets</li>
-		<li>How to support adding extra features over time, without breaking navigation pattern.</li>
-		<li>How to organize information for better discoverability</li>
-		<li>How to improve customer communication regarding issues and tickets</li>
-	</ul>
+    <h4>ITERATE, ITERATE, ITERATE</h4>
+    <p>The team spent tons of hours on research, sketching, wireframing and prototyping. It resulted in later releases. </p>
+    <figure class="article-img">
+        <img src="{{site.baseurl}}/assets/images/console/1.png">
+        <figcaption>Second release home page</figcaption>
+    </figure>    
+    <p>This time the goal was to address the issues holistically.</p>
+    <p>We collected feedback on the first version and conducted follow-up research. Based on that we decided to address the following.</p>
+    <ul>
+        <li>How to simplify issue debugging in the context of support tickets</li>
+        <li>How to support adding extra features over time, without breaking navigation pattern.</li>
+        <li>How to organize information for better discoverability</li>
+        <li>How to improve customer communication regarding issues and tickets</li>
+    </ul>
 	<section>
-		<h5>The Pattern Finder to simplify debugging</h5>
-		<figure class="article-img">
-			<img src="{{site.baseurl}}/assets/images/console/5.png">
-			<figcaption>pattern finder</figcaption>
-		</figure>
-		<p>To simplify debugging the team came up with a Pattern Finder. Where people can input the unique id of the call(callsid). It will display the pattern for calls as given below.</p>
-		<figure class="article-img">
-			<img src="{{site.baseurl}}/assets/images/console/6.png">
-			<figcaption>call pattern for given ids</figcaption>
-		</figure>
-		<p>It also displays the possible issues related to that call. For example, say the user was facing some issues with a couple of calls yesterday evening. At the same time, Exotel was having some issue with one of its servers. And customer raised a ticket about the issue today morning. Now using pattern finder customer support person can get all these details. She only needs to input the call IDs.
-		</p>
+	    <h5>An information architecture which supports growth</h5>
+	    <figure class="article-img">
+	        <img src="{{site.baseurl}}/assets/images/console/11.png">
+	        <figcaption>Infromation architecture of the application</figcaption>
+	    </figure>
+	    <p>We needed to make sure that there is no need to change the structure of the application often. After many experimentations, we arrived at the below IA which supports the expectations.</p>
+	    <p>As you can see, there is a global navigation, which is the app sidebar. For customer specific page and other pages, there is a local navigation. Each of these information hierarchies is extensible. Besides, this gives a uniform navigation structure and information hierarchy across the application.</p>
 	</section>
 	<section>
-		<h5>An information architecture which supports growth</h5>
-		<p>We needed to make sure that there is no need to change the structure of the application often. After many experimentations, we arrived at the below IA which supports the expectations.</p>
-		<p>As you can see, there is a global navigation, which is the app sidebar. For customer specific page and other pages, there is a local navigation. Each of these information hierarchies is extensible. Besides, this gives a uniform navigation structure and information hierarchy across the application.</p>
+	    <h5>The Pattern Finder to simplify debugging</h5>
+	    <figure class="article-img">
+	        <img src="{{site.baseurl}}/assets/images/console/5.png">
+	        <figcaption>Pattern finder</figcaption>
+	    </figure>
+	    <p>To simplify debugging the team came up with a Pattern Finder. Where people can input the unique id of the call(callsid). It will display the pattern for calls as given below.</p>
+	    <figure class="article-img">
+	        <img src="{{site.baseurl}}/assets/images/console/6.png">
+	        <figcaption>Call pattern for given ids</figcaption>
+	    </figure>
+	    <p>It also displays the possible issues related to that call. For example, say the user was facing some issues with a couple of calls yesterday evening. At the same time, Exotel was having some issue with one of its servers. And customer raised a ticket about the issue today morning. Now using pattern finder customer support person can get all these details. She only needs to input the call IDs.
+	    </p>
 	</section>
 	<section>
-		<h5>A tool for better customer communication</h5>
-		<figure class="article-img">
-			<img src="{{site.baseurl}}/assets/images/console/7.png">
-			<figcaption>issue notifier wizard</figcaption>
-		</figure>
-		
-		<p>This version enabled customer communication from the context of an issue. It eliminates the need of going back and forth between tools. Also, it eliminates the possible errors that can happen otherwise.</p>
+	    <h5>A tool for better customer communication</h5>
+	    <figure class="article-img">
+	        <img src="{{site.baseurl}}/assets/images/console/7.png">
+	        <figcaption>Issue notifier wizard</figcaption>
+	    </figure>
+	    
+	    <p>This version enabled customer communication from the context of an issue. It eliminates the need of going back and forth between tools. Also, it eliminates the possible errors that can happen otherwise.</p>
 	</section>
 	<section>
-		<h5>A customer specific control panel</h5>
-		<figure class="article-img">
-				<img src="{{site.baseurl}}/assets/images/console/3.png">
-				<figcaption>tenant specific page</figcaption>
-		</figure>
-		<p>For each customer, there is a page where all the details for that customer are available. It helps customer support and account management teams to view and resolve customer queries fast.</p>
+	    <h5>A customer specific control panel</h5>
+	    <figure class="article-img">
+	            <img src="{{site.baseurl}}/assets/images/console/3.png">
+	            <figcaption>Tenant's page</figcaption>
+	    </figure>
+	    <p>For each customer, there is a page where all the details for that customer are available. It helps customer support and account management teams to view and resolve customer queries fast.</p>
 	</section>
 	<section>
-		<h5>A better way to share and discuss issues</h5>
-		<figure class="article-img">
-			<img src="{{site.baseurl}}/assets/images/console/8.png">
-			<figcaption>issue page</figcaption>
-		</figure>
-		<p>Each issue has a unique URL. The customer support person can copy and share it with others to have a discussion. </p>
+	    <h5>A better way to share and discuss issues</h5>
+	    <figure class="article-img">
+	        <img src="{{site.baseurl}}/assets/images/console/8.png">
+	        <figcaption>Issue page</figcaption>
+	    </figure>
+	    <p>Each issue has a unique URL. The customer support person can copy and share it with others to have a discussion. </p>
 	</section>
 </section>
+<section>
+    <h4>WHAT'S AHEAD</h4>
+    <p>The application got well received by support teams. There is room for improvements and new features. The team is validating and working on it. It will evolve over time. .</p>
+ </section>
 
