@@ -13,8 +13,10 @@
 			<a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/logo/logo.png" id="logo"></a>
 			{% include nav.html %}
 		</header>
+		<article role="main">
 			{{content}}
-			{% include footer.html %}
+		</article>
+		{% include footer.html %}
 	</div>
 	<script type="text/javascript" src="{{site.baseurl}}/script/main.js"></script>
 </body>
