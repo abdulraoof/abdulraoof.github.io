@@ -79,7 +79,7 @@ p {
 }
 
 small,figcaption {
-  @include type-style(0.618em, uppercase, 1px, 600,#555)
+  @include type-style(0.618em, uppercase, 1px, 600,#555);
 }
 
 figcaption {
@@ -128,7 +128,27 @@ img {
       margin-bottom: 2em;
    }
 }
+.article-img-small {
+  margin: 0 auto;
+  text-align: center;
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px){
+    position: relative;
+    width: 35vw;
+  }
+  margin-bottom: 2em;
+  img{
+     border: 1px solid #eee; 
+   }
+   border-bottom: 1px solid #eee;
+   figcaption{
+      margin-bottom: 2em;
+   }
+}
 
+video {
+  width: 100%;
+  margin: 0 auto;
+}
 // emphasis styles 
 em {
   font-weight: 600;
@@ -206,4 +226,9 @@ footer {
       }
     }
   }
+}
+
+//Case studies
+.works {
+  
 }
