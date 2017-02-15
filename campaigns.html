@@ -118,7 +118,7 @@ layout: default
 	</figure>
 </section>
 <section>
-	<h4>Conceptualising Solutions</h4>
+	<h4>Exploring Solutions</h4>
 	<p>At this stage, the walls in the sprint room were full of questions, notes, and ideas. Since the sprint team was small, everyone needed to work on all three major stages of the campaign experience. 
 	Everyone worked on creating solutions for each stage (scheduling, delivery and analysis). The team made use of four step sketching process. 
 	Each one presented their ideas, and the team shortlisted best ideas.
@@ -146,64 +146,74 @@ layout: default
 </section>
 <section>
 	<h4>Testing and Iterations</h4>
+	On the fifth day of the sprint, the prototype is presented to the people internally and collected the feedback. And during the customer interviews on the weeks followed, the prototype is presented to customers and made revisions.
 	<p></p>
 	<section>
-		<h5></h5>
-		<p></p>
+		<h5>The Wizard: Divide and Conquer</h5>
+		<p>One issue with the current campaign was of context switching. The campaign depends on other features. For example, the flow builder where the user can create call flow for the campaign, the address book where the user can store the contacts, etc. We needed to ensure that the flow is not overwhelming users. Considering the complexity of the entire process, we decided to chunk the tasks so that user can deal each step with discrete mental space. </p>
 		<figure class="article-img">
 			<img img-small src="{{site.baseurl}}/assets/images/campaigns/campaign-setup.png">
 			<figcaption>Home Page for Campaigns</figcaption>
 		</figure>
+		<figure class="article-img">
+			<video controls>
+				<source src="{{site.baseurl}}/assets/images/campaigns/createcampaign.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video> 
+		<figcaption>Create campaign flow</figcaption>
+	</figure>
 	</section>
 	<section>
-		<h5></h5>
-		<p></p>
+		<h5>Search and Filter</h5>
+		<p>For a given account, people across departments uses the dashboard. Some accounts have more than fifty users.To quickly discover the campaign user is looking, the search should be robust enough. The user can search the campaign by name, filter the campaign by status, who created, type of the campaign and date range</p>
+		<figure class="article-img">
+			<video controls>
+				<source src="{{site.baseurl}}/assets/images/campaigns/campainghomevideo.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video> 
+		<figcaption>Campaign Home</figcaption>
+	</figure>
+	</section>
+	<section>
+		<h5>Duplicate campaigns</h5>
+		<p>During our research,  we figured out people were creating campaigns with little differences. For example, just the content changes or the time. It was painful for them to go through the same steps again and again since there was no way to duplicate the campaigns. To address these issues we came up with an option to duplicate the campaigns. </p>
+		<figure class="article-img">
+			<img img-small src="{{site.baseurl}}/assets/images/campaigns/confirm.png">
+			<figcaption>Duplicate Campaign: Confirmation</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h5>Make it Personal</h5>
+		<p>Most of our customers were using campaigns for promotional purposes.  Even though there are transactional uses for the campaign, people were not using it because there is no option to send personalised messages. During our customer interviews, this pattern was evident. Personalisation opens up a lot of opportunities that was not possible before. 
+		To enable these possibilities, we came up with a more advanced contact list manager</p>
 		<figure class="article-img">
 			<img img-small src="{{site.baseurl}}/assets/images/campaigns/content.png">
 			<figcaption>Content and Schedule</figcaption>
 		</figure>
-	</section>
-	<section>
-		<h5></h5>
-		<p></p>
-		<figure class="article-img">
-			<img img-small src="{{site.baseurl}}/assets/images/campaigns/confirm.png">
-			<figcaption>Confirmation</figcaption>
-		</figure>
-	</section>
-	<section>
-		<h5></h5>
-		<p></p>
-		<figure class="article-img">
-			<img img-small src="{{site.baseurl}}/assets/images/campaigns/listhome.png">
-			<figcaption>Contact List</figcaption>
-		</figure>
-	</section>
-	<section>
-		<h5></h5>
-		<p></p>
+		<section>
+			<h6>Custom Fields</h6>
+			<p>The user can create custom fields when they create the list. Before, it was too rigid and only supported some pre-defined fields. </p>
+		</section>
+		<section>
+			<h6>Tags</h6>
+			<p>The user can tag each field and use these tags as placeholders in the messages while composing them. If the user wants to include the name or personalised offer code or anything else, it is now super easy.</p>
+		</section>
 		<figure class="article-img">
 			<img img-small src="{{site.baseurl}}/assets/images/campaigns/listfieldtags.png">
 			<figcaption>List Fields and Tags</figcaption>
 		</figure>
 	</section>
+	<section>
+		<h5>Recurring Campaigns</h5>
+		<p>To address pain point of doing the similar campaigns again and again, the team came up with recurring campaigns. The customer can schedule a campaign which runs on a specified time frame. Combining this with new list feature opens up the opportunity to automate the campaign. For example, a growth hacker can automate a recurring engagement campaign for newly signed up users each week. Once the campaign is scheduled, customers can dynamically update the list each week.</p>
+	</section>
 </section>
 <section>
-	<h4></h4>
-	<p></p>
+	<h4>API<span class="small-letter">s<span> for Everything</h4>
+	<p>One of the questions addressed was about making the campaign flexible and extensible. There significant number of customers who uses the current call and SMS APIs. People have implemented the broad spectrum of solutions using these APIs. We decided to bring the same flexibility for campaigns and list. Once APIs are available, people can create solutions that fit their unique needs. </p>
 	<figure class="article-img">
-		<video controls>
-			<source src="{{site.baseurl}}/assets/images/campaigns/campainghomevideo.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video> 
-		<figcaption>Campaign Home</figcaption>
-	</figure>
-	<figure class="article-img">
-		<video controls>
-			<source src="{{site.baseurl}}/assets/images/campaigns/createcampaign.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video> 
-		<figcaption>Create campaign flow</figcaption>
+			<img img-small src="{{site.baseurl}}/assets/images/campaigns/listhome.png">
+			<figcaption>Contact List</figcaption>
 	</figure>
 	<figure class="article-img">
 		<video controls>
@@ -211,13 +221,6 @@ layout: default
 			Your browser does not support the video tag.
 		</video> 
 		<figcaption>Create list flow</figcaption>
-	</figure>
-	<figure class="article-img">
-		<video controls>
-			<source src="{{site.baseurl}}/assets/images/campaigns/listdetails.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video> 
-		<figcaption>List Details</figcaption>
 	</figure>
 </section>
 <section>
@@ -231,5 +234,6 @@ layout: default
 <section>
 	<p><a href="{{site.baseurl}}/works">More Works ></a></p>
 </section>
+
 
 

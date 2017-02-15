@@ -98,6 +98,10 @@ a {
   }
 }
 
+.small-letter {
+  text-transform: lowercase;
+}
+
 // unordered list styles 
 ul {
   margin-bottom: 1em;
@@ -107,6 +111,7 @@ ul {
     padding-left: 8px;
   }
 }
+
 // image styles 
 
 img {
