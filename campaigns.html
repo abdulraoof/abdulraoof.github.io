@@ -28,7 +28,7 @@ layout: default
 	<p>Campaigns were majorly used for promotional purposes, to drive growth or to engage customers. That means the users vary from growth hacker in the marketing team to customer engagement or operation manager. Also, there are transactional use cases for campaigns. For example, pick up scheduling in e-commerce. </p>
 </section>
 <section>
-	<h4>Investigating the issue</h4>
+	<h4>Research</h4>
 	<p>
 		<ul>
 			<li>One to one interviews with customers</li>
@@ -40,8 +40,23 @@ layout: default
 	</p>
 	<figure class="article-img">
 		<img img-small src="{{site.baseurl}}/assets/images/campaigns/interview.png">
-		<figcaption>Questions and Insights</figcaption>
+		<figcaption>Questions and Findings</figcaption>
 	</figure>
+	<section>
+		<h5>Insights</h5>
+		<p>
+			The major insights from the research were the following. 
+		</p>
+		<p>
+			<ul>
+				<li>Campaign creation is painful since there are multiple things to be taken cared such as template approval, creating flow, adding and managing recipients.</li>
+				<li>Analysis of result is not straightforward. Campaign wise reports are not available for download. The user needs to go through series of steps to access the reports. </li>
+				<li>The campaign is static. It is limiting the transactional use cases since there is no option for personalisation.</li>
+				<li>The contact list is not flexible. It results in extra burden in analysing and reporting.</li>
+				<li>The user needs to go through the same steps again and again while creating the campaigns with subtle differences.</li>
+			</ul>
+		</p>
+	</section>
 </section>
 <section>
 	<h4>The Design Sprint</h4>
@@ -146,8 +161,22 @@ layout: default
 </section>
 <section>
 	<h4>Testing and Iterations</h4>
-	On the fifth day of the sprint, the prototype is presented to the people internally and collected the feedback. And during the customer interviews on the weeks followed, the prototype is presented to customers and made revisions.
-	<p></p>
+	<p>On the fifth day of the sprint, the prototype is presented to the people internally and collected the feedback. And during the customer interviews on the weeks followed, the prototype is presented to customers and made revisions.</p>
+	<figure class="article-img">
+			<img img-small src="{{site.baseurl}}/assets/images/campaigns/importcontacts-options.png">
+			<figcaption>Exploring Options for Import Contacts</figcaption>
+	</figure>
+	<section>
+		<h5>Search and Filter</h5>
+		<p>For a given account, people across departments uses the dashboard. Some accounts have more than fifty users.To quickly discover the campaign user is looking, the search should be robust enough. The user can search the campaign by name, filter the campaign by status, who created, type of the campaign and date range</p>
+		<figure class="article-img">
+			<video controls>
+				<source src="{{site.baseurl}}/assets/images/campaigns/campainghomevideo.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video> 
+		<figcaption>Campaign Home</figcaption>
+	</figure>
+	</section>
 	<section>
 		<h5>The Wizard: Divide and Conquer</h5>
 		<p>One issue with the current campaign was of context switching. The campaign depends on other features. For example, the flow builder where the user can create call flow for the campaign, the address book where the user can store the contacts, etc. We needed to ensure that the flow is not overwhelming users. Considering the complexity of the entire process, we decided to chunk the tasks so that user can deal each step with discrete mental space. </p>
@@ -162,25 +191,6 @@ layout: default
 			</video> 
 		<figcaption>Create campaign flow</figcaption>
 	</figure>
-	</section>
-	<section>
-		<h5>Search and Filter</h5>
-		<p>For a given account, people across departments uses the dashboard. Some accounts have more than fifty users.To quickly discover the campaign user is looking, the search should be robust enough. The user can search the campaign by name, filter the campaign by status, who created, type of the campaign and date range</p>
-		<figure class="article-img">
-			<video controls>
-				<source src="{{site.baseurl}}/assets/images/campaigns/campainghomevideo.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video> 
-		<figcaption>Campaign Home</figcaption>
-	</figure>
-	</section>
-	<section>
-		<h5>Duplicate campaigns</h5>
-		<p>During our research,  we figured out people were creating campaigns with little differences. For example, just the content changes or the time. It was painful for them to go through the same steps again and again since there was no way to duplicate the campaigns. To address these issues we came up with an option to duplicate the campaigns. </p>
-		<figure class="article-img">
-			<img img-small src="{{site.baseurl}}/assets/images/campaigns/confirm.png">
-			<figcaption>Duplicate Campaign: Confirmation</figcaption>
-		</figure>
 	</section>
 	<section>
 		<h5>Make it Personal</h5>
@@ -211,9 +221,17 @@ layout: default
 		<figcaption>Create Recurring Campaign</figcaption>
 	</figure>
 	</section>
+	<section>
+		<h5>Duplicate campaigns</h5>
+		<p>During our research,  we figured out people were creating campaigns with little differences. For example, just the content changes or the time. It was painful for them to go through the same steps again and again since there was no way to duplicate the campaigns. To address these issues we came up with an option to duplicate the campaigns. </p>
+		<figure class="article-img">
+			<img img-small src="{{site.baseurl}}/assets/images/campaigns/confirm.png">
+			<figcaption>Duplicate Campaign: Confirmation</figcaption>
+		</figure>
+	</section>
 </section>
 <section>
-	<h4>API<span class="small-letter">s<span> for Everything</h4>
+	<h4>API<span class="small-letter">s</span> for Everything</h4>
 	<p>One of the questions addressed was about making the campaign flexible and extensible. There significant number of customers who uses the current call and SMS APIs. People have implemented the broad spectrum of solutions using these APIs. We decided to bring the same flexibility for campaigns and list. Once APIs are available, people can create solutions that fit their unique needs. </p>
 	<figure class="article-img">
 			<img img-small src="{{site.baseurl}}/assets/images/campaigns/listhome.png">
