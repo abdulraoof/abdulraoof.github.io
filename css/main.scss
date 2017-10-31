@@ -40,25 +40,46 @@ body {
 
 h1, h2, h3, h4 , h5{
   margin: 1em 0 0.2em;
-  font-weight: 400;
   line-height: 1.2;
   font-family: $primary-font;
 }
 h2, h3, h4 , h5{
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h1 { 
     font-size: 2.618em;
+    font-weight: 700;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+        font-size: 2.0944em;
+    }
 }
 
-h2 {font-size: 1.618em;}
+h2 {
+    font-size: 1.618em;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+        font-size: 1.2944em;
+    }
+}
 
-h3 {font-size: 1.2em;}
+h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+      font-size: 0.96em;
+    }
+}
 
 h4 {
   font-size: 1em;
   line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $secondary-font;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+      font-size: 0.8em;
+  }
+    
 }
 
 h5 {
@@ -74,6 +95,9 @@ p {
   font-size: 1.1em;
   margin-bottom: 1em;
   line-height: 1.6;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+      font-size: 0.88em
+  }
 }
 
 // leading paragraph 
@@ -82,7 +106,7 @@ p {
     margin-bottom: .6em;
     line-height: 1.5;
     @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
-      font-size: 1.15em
+      font-size: 0.988em;
     }
 }
 
