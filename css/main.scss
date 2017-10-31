@@ -42,7 +42,7 @@ h1, h2, h3, h4 , h5{
   margin: 1em 0 0.2em;
   font-weight: 400;
   line-height: 1.2;
-  font-family: $secondary-font;
+  font-family: $primary-font;
 }
 h2, h3, h4 , h5{
   font-weight: 600;
@@ -50,7 +50,6 @@ h2, h3, h4 , h5{
 
 h1 { 
     font-size: 2.618em;
-    text-transform: uppercase;
 }
 
 h2 {font-size: 1.618em;}
@@ -255,8 +254,9 @@ footer {
 }
 
 .meta {
-  font-weight: 400;
-  font-size: .9em;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: .9em;  
 }
 
 //quotes
@@ -271,6 +271,8 @@ blockquote{
     font-weight: 300;
   }
   .author{
+    font-family: $secondary-font;
+    font-size: .8em; 
     font-weight: 300;
     font-style: normal;
     text-align: left;
