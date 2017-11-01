@@ -1,12 +1,14 @@
 ---
 layout: default
+permalink: /journal/
+title: Jorunal
 ---
 <h1>Journal</h1>
-<p class="lead">Brief rants on thigs I care about.</p>
+<p class="lead">Brief rants on things I care about.</p>
 <ul class="post-list margin-left-zero">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a><span class="post-date">{{post.date | date_to_long_string}}</span>
     </li>
   {% endfor %}
 </ul>

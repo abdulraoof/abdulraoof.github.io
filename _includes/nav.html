@@ -1,10 +1,9 @@
 <nav role="navigation">
-<!--	<ul class="{% if page.url == '/' %}home-nav{% endif %}">-->
     <ul>
-		<li><a href="{{site.baseurl}}/">Home</a></li>
- 		<li><a href="{{site.baseurl}}/_pages/journal.html">Journal</a></li> 
-<li><a href="{{site.baseurl}}/_pages/quotes.html">Quotes</a></li>
-		<li><a href="{{site.baseurl}}/_pages/bio.html">Bio</a></li>
+		<li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}selected{% endif %}">Home</a></li>
+ 		<li><a href="{{site.baseurl}}/journal/" class="{% if page.url == '/journal/' %}selected{% endif %}">Journal</a></li> 
+        <li><a href="{{site.baseurl}}/quotes" class="{% if page.url == '/quotes/' %}selected{% endif %}">Quotes</a></li>
+		<li><a href="{{site.baseurl}}/bio" class="{% if page.url == '/bio/' %}selected{% endif %}">Bio</a></li>
 	</ul>
 </nav>	
 

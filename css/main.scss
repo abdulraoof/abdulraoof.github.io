@@ -96,6 +96,12 @@ p {
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
       font-size: 0.88em;
   }
+  &.navigation {
+      font-family: $secondary-font;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: 700;
+  }
 }
 
 // leading paragraph 
@@ -136,7 +142,11 @@ a {
 // unordered list styles 
 ul {
   margin-bottom: 1em;
-  list-style-type: circle;
+  list-style-type: disc;
+  font-size: 1.1em;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
+      font-size: 0.88em;
+  }
   &.post-list {
       list-style: none;
       li{
@@ -204,9 +214,6 @@ video {
 }
 
 // emphasis styles 
-em {
-  font-weight: 600;
-}
 
 section {
   margin-bottom: 3.5em;
@@ -228,20 +235,17 @@ nav{
       a {
         @extend small;
         font-size: 0.8em;
+        &.selected{
+            color: #000;
+            border-bottom: 2px solid #333;
+            padding-bottom: 14px;
+        }
       }
         
     }
   }
 }
 
-.home-nav{
-   li{
-    &:first-child{
-      display: none;
-      padding: 0;
-    }
-   } 
-}
 
 header {
   margin: 3em  0 3em 0;
@@ -319,6 +323,17 @@ blockquote{
 //helper classes
 .margin-left-zero {
     margin-left: 0;
+}
+.alternate-h2 {
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+.article-end {
+    border-bottom:  4px double #eee;
+    border-top:  solid 1px #eee;
 }
 
 

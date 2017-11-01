@@ -44,3 +44,6 @@ plugins:
 
 #include the pages directory where the pages are organised
 include: ["_pages"]
+
+
+
