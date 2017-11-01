@@ -139,8 +139,20 @@ ul {
   list-style-type: circle;
   &.post-list {
       list-style: none;
+      li{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #eee;
+        &:last-child{
+              border-bottom: none;
+          }
+       .post-date {
+            float:right;
+            color: #666;
+        }
+      }
       a {
-          text-decoration: underline;
+          text-decoration: none;
       }
   }
   li{
@@ -308,4 +320,5 @@ blockquote{
 .margin-left-zero {
     margin-left: 0;
 }
+
 
