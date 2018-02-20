@@ -43,7 +43,15 @@ plugins:
 #   - vendor/ruby/
 
 #include the pages directory where the pages are organised
+#Create photo collection to display photo gallery
 include: ["_pages"]
+collections:
+  photos:
+    output: true
 
-
-
+defaults:
+  - scope:
+    path: ""
+      type: photos
+  values:
+      layout: photo
