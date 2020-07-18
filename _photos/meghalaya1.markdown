@@ -5,6 +5,7 @@ image: "rainbowfall.jpg"
 exif:
   camera: "iPhone 6S"
   dateTaken: 2013-06-12 12:08 -0300
+  rating: 1
   location:
-    name: "Nongriat, Meghala, Indias"
+    name: "Nongriat, Meghala, India"
 ---
