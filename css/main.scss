@@ -26,7 +26,12 @@ $secondary-color: rgba(25,52,65,1);
   color: $color;
 }
 
-html {font-size: 1em;}
+html {
+  font-size: 1em;
+  //Fix for horizontal jump when vertical scrollbar appears
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
 
 body {
   background-color: white;
