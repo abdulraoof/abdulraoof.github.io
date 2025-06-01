@@ -1,0 +1,6 @@
+- url: "{{ site.baseurl }}/assets/images/analytics/information.jpg"
+  alt: Image 1
+- url: "{{ site.baseurl }}/assets/images/analytics/information.jpg"
+  alt: Image 2
+- url: "{{ site.baseurl }}/assets/images/analytics/information.jpg"
+  alt: Image 3

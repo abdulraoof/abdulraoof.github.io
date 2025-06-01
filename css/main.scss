@@ -5,11 +5,11 @@
 
 // Imports 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700|Merriweather:300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 @import 'grid';
 
 // Variables 
-
-$primary-font: 'Merriweather', serif ;
+$primary-font: "Alegreya", serif;
 $secondary-font: 'Merriweather Sans', sans-serif;
 $type-color: rgba(0,0,0,0.8);
 $break-small: 480px;
@@ -39,7 +39,9 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: $type-color;
+  height: 100%; //new
 }
+
 
 // Typography 
 
@@ -95,7 +97,7 @@ h6{
 
 // paragraph styles 
 p {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 1em;
   line-height: 1.5;
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px){
@@ -107,6 +109,27 @@ p {
       font-size: 1em;
       font-weight: 700;
   }
+  a {
+    color: $type-color;
+    text-decoration: none; /* remove default underline */
+    border-bottom: 4px solid #ccc; /* custom underline: width and color */
+    background-color: transparent;
+    transition: all 0.15s ease 0s normal;
+    &:hover {
+      border-bottom-color: $type-color;
+      color: $type-color;
+    }
+  }
+  strong {
+    font-weight: 500;
+  }
+}
+
+
+
+//bio paragraph
+.bio {
+  font-size: 1.5em;
 }
 
 // leading paragraph 
@@ -135,8 +158,6 @@ a {
   color: $primary-color;
   &:hover{
     color: $secondary-color;
-  }
-  &:visited {
   }
 }
 
@@ -265,6 +286,10 @@ header {
 // footer section 
 footer {
   margin: 3em 0 1.5em 0;
+  // position: absolute; //new
+  // bottom: 0;
+  // height: 100px;
+  // overflow:hidden;
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
     margin-top: 1.5em;
   }
@@ -340,5 +365,6 @@ blockquote{
     border-bottom:  4px double #eee;
     border-top:  solid 1px #eee;
 }
+
 
 
