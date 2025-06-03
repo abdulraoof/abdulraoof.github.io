@@ -1,0 +1,456 @@
+---
+---
+// Author: abdul raoof
+
+// ==========================================================================
+// Imports
+// ==========================================================================
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700|Merriweather:300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import 'grid';
+
+// ==========================================================================
+// Variables
+// ==========================================================================
+$primary-font: "Alegreya", serif;
+$secondary-font: 'Merriweather Sans', sans-serif;
+$type-color: rgba(0, 0, 0, 0.8);
+$break-small: 480px;
+$primary-color: rgba(52, 152, 219, 1);
+$secondary-color: rgba(25, 52, 65, 1);
+
+// ==========================================================================
+// Mixins
+// ==========================================================================
+@mixin type-style($size, $transform, $spacing, $weight, $color) {
+  font-size: $size;
+  text-transform: $transform;
+  font-family: $secondary-font;
+  letter-spacing: $spacing;
+  font-weight: $weight;
+  color: $color;
+}
+
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+html {
+  font-size: 1em;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+body {
+  background-color: white;
+  font-family: $primary-font;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $type-color;
+  height: 100%;
+}
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 0.2em;
+  line-height: 1.2;
+  font-family: $primary-font;
+  grid-column: 4/10;
+}
+
+h1 {
+  font-size: 2.618em;
+  font-weight: 700;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 2.0944em;
+  }
+}
+
+h2 {
+  font-size: 1.618em;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 1.2944em;
+  }
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 0.96em;
+    text-transform: uppercase;
+  }
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $secondary-font;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 0.8em;
+  }
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-weight: 800;
+}
+
+// ==========================================================================
+// Paragraphs & Text Elements
+// ==========================================================================
+p {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 0.88em;
+  }
+
+  &.navigation {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  a {
+    color: $type-color;
+    text-decoration: none;
+    border-bottom: 4px solid #ccc;
+    transition: all 0.15s ease 0s normal;
+
+    &:hover {
+      border-bottom-color: $type-color;
+      color: $type-color;
+    }
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.bio {
+  font-size: 1.5em;
+  grid-template-columns: subgrid;
+  grid-column: 4 / 10;
+}
+
+.headshot {
+  grid-column: 3/4;
+  border-radius: 50%;
+}
+
+.lead {
+  font-size: 1.236em;
+  margin-bottom: .6em;
+  line-height: 1.6;
+  font-style: italic;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 0.988em;
+  }
+}
+
+small,
+figcaption {
+  @include type-style(0.618em, uppercase, 1px, 600, #555);
+}
+
+figcaption {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: .5em;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.small-letter {
+  text-transform: lowercase;
+}
+
+// ==========================================================================
+// Lists
+// ==========================================================================
+ul {
+  margin-bottom: 1em;
+  list-style-type: disc;
+  font-size: 1.1em;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 0.88em;
+  }
+
+  &.post-list {
+    list-style: none;
+
+    li {
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .post-date {
+        float: right;
+        color: #666;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    padding-bottom: 8px;
+  }
+}
+
+// ==========================================================================
+// Media Elements
+// ==========================================================================
+img {
+  width: 100%;
+}
+
+.article-img {
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px) {
+    position: relative;
+    width: 70vw;
+    left: calc(-35vw + 50%);
+  }
+
+  margin: 1em 0 2em 0;
+
+  img {
+    border: 1px solid #eee;
+  }
+
+  border-bottom: 1px solid #eee;
+
+  figcaption {
+    margin-bottom: 2em;
+  }
+}
+
+.article-img-small {
+  margin: 0 auto;
+  text-align: center;
+
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px) {
+    position: relative;
+    width: 35vw;
+  }
+
+  margin-bottom: 2em;
+
+  img {
+    border: 1px solid #eee;
+  }
+
+  border-bottom: 1px solid #eee;
+
+  figcaption {
+    margin-bottom: 2em;
+  }
+}
+
+video {
+  width: 100%;
+  margin: 0 auto;
+}
+
+// ==========================================================================
+// Layout Elements
+// ==========================================================================
+section {
+  margin: 0;
+}
+
+// ==========================================================================
+// Navigation
+// ==========================================================================
+nav {
+  font-family: $secondary-font;
+  padding: 2em 0 .75em 0;
+  margin: 0 auto;
+
+  ul {
+    margin-bottom: 0;
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 .75em 0 0;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        @extend small;
+        font-size: 0.8em;
+
+        &.selected {
+          color: #000;
+          border-bottom: 2px solid #333;
+          padding-bottom: 14px;
+        }
+      }
+    }
+  }
+}
+
+header {
+  margin: 0 auto 2em auto;
+  border-bottom: 1px solid #eee;
+  grid-column: 4/10;
+  width: 100%;
+}
+
+#logo {
+  width: 100px;
+  height: 64px;
+}
+
+// ==========================================================================
+// Footer
+// ==========================================================================
+footer {
+  margin: 2em auto 0 auto;
+  grid-column: 4/10;
+  width: 100%;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    margin-top: 1.5em;
+    width: 100%;
+  }
+
+  border-top: 1px solid #eee;
+  color: #666;
+
+  span {
+    @extend small;
+    font-weight: 400;
+  }
+
+  nav {
+    ul {
+      float: right;
+      padding: 0;
+
+      @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+        float: none;
+        margin-bottom: 1.5em;
+      }
+
+      li {
+        padding: 0;
+
+        a {
+          @extend small;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// Case Studies
+// ==========================================================================
+.works {
+  margin-top: 2em;
+  grid-column: 4/10;
+}
+
+.meta {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: .9em;
+}
+
+// ==========================================================================
+// Quotes
+// ==========================================================================
+blockquote {
+  margin: 2em 0 2em 0;
+  font-weight: 400;
+
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  span {
+    font-weight: 300;
+  }
+
+  .author {
+    font-family: $secondary-font;
+    font-size: .8em;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    margin: .2em 0 0.5em 0;
+  }
+}
+
+// ==========================================================================
+// Books
+// ==========================================================================
+// .reading 
+// {
+//   h1 {
+//     color: red;
+//   }
+// }
+
+
+// ==========================================================================
+// Helper Classes
+// ==========================================================================
+.margin-left-zero {
+  margin-left: 0;
+}
+
+.alternate-h2 {
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.article-end {
+  border-bottom: 4px double #eee;
+  border-top: solid 1px #eee;
+}
