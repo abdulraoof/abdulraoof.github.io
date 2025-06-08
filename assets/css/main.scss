@@ -1,7 +1,5 @@
 ---
 ---
-
-
 // ==========================================================================
 // Imports
 // ==========================================================================
@@ -16,10 +14,11 @@
 // ==========================================================================
 $primary-font: "Alegreya", serif;
 $secondary-font: 'Merriweather Sans', sans-serif;
-$type-color: rgba(0, 0, 0, 0.8);
+$grey-1: rgba(51, 51, 51, 1);
+$grey-2: rgba(25, 52, 65, 1);
 $break-small: 480px;
-$primary-color: rgba(52, 152, 219, 1);
-$secondary-color: rgba(25, 52, 65, 1);
+
+
 
 // ==========================================================================
 // Mixins
@@ -47,7 +46,7 @@ body {
   font-family: $primary-font;
   font-weight: 400;
   line-height: 1.45;
-  color: $type-color;
+  color: $grey-1;
   height: 100%;
   overflow-y: scroll;
 }
@@ -133,14 +132,14 @@ p {
   }
 
   a {
-    color: $type-color;
+    color: $grey-1;
     text-decoration: none;
     border-bottom: 4px solid #ccc;
     transition: all 0.15s ease 0s normal;
 
     &:hover {
-      border-bottom-color: $type-color;
-      color: $type-color;
+      border-bottom-color: $grey-1;
+      color: $grey-1;
     }
   }
 
@@ -184,10 +183,10 @@ figcaption {
 
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: $grey-2;
 
   &:hover {
-    color: $secondary-color;
+    color: $grey-2;
   }
 }
 
@@ -470,17 +469,17 @@ blockquote {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
-  h1 {
+  h2 {
     padding-top: 8px;
     font-size: .8em;
     font-family: $secondary-font;
     font-weight: 400;
     margin: 0 0 4px 0;
-    color: $secondary-color;
+    color: $grey-2;
   }
-  h2 {
+  h3 {
     font-size: .9em;
-    color: $secondary-color;
+    color: $grey-2;
   }
 }
 
