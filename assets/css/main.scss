@@ -49,6 +49,7 @@ body {
   line-height: 1.45;
   color: $type-color;
   height: 100%;
+  overflow-y: scroll;
 }
 
 // ==========================================================================
@@ -427,12 +428,53 @@ blockquote {
 // ==========================================================================
 // Books
 // ==========================================================================
-// .reading 
-// {
-//   h1 {
-//     color: red;
-//   }
-// }
+
+.readings_wrapper{
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 2 / 12;
+  .reading_link {
+    text-decoration: none;
+    display: block;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.reading 
+{
+  padding: 1em;
+  transition: background-color 0.2s ease;
+  &:hover{
+    background-color: #f5f5f5;
+  }
+  .thumbnail {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: flex-end;
+    img {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+  }
+  &:hover .thumbnail img {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  h1 {
+    padding-top: 8px;
+    font-size: .8em;
+    font-family: $secondary-font;
+    font-weight: 400;
+    margin: 0 0 4px 0;
+    color: $secondary-color;
+  }
+  h2 {
+    font-size: .9em;
+    color: $secondary-color;
+  }
+}
 
 
 // ==========================================================================
