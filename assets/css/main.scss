@@ -14,43 +14,33 @@
 // Variables
 // ==========================================================================
 
-$primary-font: "Alegreya", serif;
-$secondary-font: 'Merriweather Sans', sans-serif;
-$grey-1: rgba(51, 51, 51, 1);
-$grey-2: rgba(25, 52, 65, 1);
-$break-small: 480px;
+$font-primary: "Alegreya", serif;
+$font-secondary: 'Merriweather Sans', sans-serif;
 
-
-
-// ==========================================================================
-// Mixins
-// ==========================================================================
-
-@mixin type-style($size, $transform, $spacing, $weight, $color) {
-  font-size: $size;
-  text-transform: $transform;
-  font-family: $secondary-font;
-  letter-spacing: $spacing;
-  font-weight: $weight;
-  color: $color;
-}
+$color-text-primary:rgba(51, 51, 51, 1);
+$color-text-secondary: rgba(25, 52, 65, 1);
+$color-text-muted: rgba(102, 102, 102, 1);
+$color-border: #eee;
+$color-border-accent: #333;
+$color-background: #fff;
+$color-background-hover: #f5f5f5;
 
 // ==========================================================================
 // Base Styles
 // ==========================================================================
 
 html {
-  font-size: 1em;
+  font-size: 1rem;
   margin-left: calc(100vw - 100%);
   margin-right: 0;
 }
 
 body {
-  background-color: white;
-  font-family: $primary-font;
+  background-color: $color-background;
+  font-family: $font-primary;
   font-weight: 400;
   line-height: 1.45;
-  color: $grey-1;
+  color: $color-text-primary;
   height: 100%;
   overflow-y: scroll;
 }
@@ -66,53 +56,54 @@ h4,
 h5 {
   margin: 0 0 0.2em;
   line-height: 1.2;
-  font-family: $primary-font;
+  font-family: $font-primary;
 }
 
 h1 {
-  font-size: 2.618em;
+  font-size: 2.618rem;
   font-weight: 700;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 2.0944em;
+    font-size: 2.0944rem;
   }
 }
 
 h2 {
-  font-size: 1.618em;
+  font-size: 1.618rem;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 1.2944em;
+    font-size: 1.2944rem;
   }
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 700;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 0.96em;
+    font-size: 0.96rem;
     text-transform: uppercase;
   }
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: $secondary-font;
+  font-family: $font-secondary;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 h6 {
+  font-size: 1rem;
   font-weight: 800;
 }
 
@@ -121,30 +112,30 @@ h6 {
 // ==========================================================================
 
 p {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin-bottom: 1em;
   line-height: 1.5;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 0.88em;
+    font-size: 0.88rem;
   }
 
   &.navigation {
-    font-family: $secondary-font;
+    font-family: $font-secondary;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
   }
 
   a {
-    color: $grey-1;
+    color: $color-text-primary;
     text-decoration: none;
     border-bottom: 4px solid #ccc;
     transition: all 0.15s ease 0s normal;
 
     &:hover {
-      border-bottom-color: $grey-1;
-      color: $grey-1;
+      border-bottom-color: $color-text-primary;
+      color: $color-text-primary;
     }
   }
 
@@ -154,7 +145,7 @@ p {
 }
 
 .bio {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .headshot {
@@ -162,33 +153,38 @@ p {
 }
 
 .lead {
-  font-size: 1.236em;
+  font-size: 1.236rem;
   margin-bottom: .6em;
   line-height: 1.6;
   font-style: italic;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 0.988em;
+    font-size: 0.988rem;
   }
 }
 
 small,
 figcaption {
-  @include type-style(0.618em, uppercase, 1px, 600, #555);
+  font-size: 0.618rem;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: $color-text-muted;
 }
 
 figcaption {
   text-align: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: $color-text-muted;
   margin-top: .5em;
 }
 
 a {
   text-decoration: none;
-  color: $grey-2;
+  color: $color-text-secondary;
 
   &:hover {
-    color: $grey-2;
+    color: $color-text-secondary;
   }
 }
 
@@ -203,10 +199,10 @@ a {
 ul {
   margin-bottom: 1em;
   list-style-type: disc;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 0.88em;
+    font-size: 0.88rem;
   }
 
   &.post-list {
@@ -223,7 +219,7 @@ ul {
 
       .post-date {
         float: right;
-        color: #666;
+        color: $color-text-muted;
       }
     }
 
@@ -304,7 +300,7 @@ section {
 // ==========================================================================
 
 nav {
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   padding: 2em 0 .75em 0;
   margin: 0 auto;
 
@@ -322,11 +318,11 @@ nav {
 
       a {
         @extend small;
-        font-size: 0.8em;
+        font-size: 0.8rem;
 
         &.selected {
-          color: #000;
-          border-bottom: 2px solid #333;
+          color: $color-text-primary;
+          border-bottom: 2px solid $color-border-accent;
           padding-bottom: 14px;
         }
       }
@@ -358,8 +354,8 @@ footer {
     width: 100%;
   }
 
-  border-top: 1px solid #eee;
-  color: #666;
+  border-top: 1px solid $color-border;
+  color: $color-text-primary;
 
   span {
     @extend small;
@@ -381,7 +377,7 @@ footer {
 
         a {
           @extend small;
-          color: #666;
+          color: $color-text-muted;
         }
       }
     }
@@ -396,9 +392,9 @@ footer {
 }
 
 .meta {
-  font-family: $secondary-font;
+  font-family: $font-secondary;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9rem;
 }
 
 // ==========================================================================
@@ -418,8 +414,8 @@ blockquote {
   }
 
   .author {
-    font-family: $secondary-font;
-    font-size: .8em;
+    font-family: $font-secondary;
+    font-size: 0.8rem;
     font-weight: 300;
     font-style: normal;
     text-align: left;
@@ -448,7 +444,7 @@ blockquote {
   flex-direction: column;
   transition: background-color 0.2s ease;
   &:hover{
-    background-color: #f5f5f5;
+    background-color: $color-background-hover;
   }
   .thumbnail {
     height: 180px;
@@ -470,15 +466,15 @@ blockquote {
   }
   h2 {
     padding-top: 8px;
-    font-size: .8em;
-    font-family: $secondary-font;
+    font-size: 0.8rem;
+    font-family: $font-secondary;
     font-weight: 400;
     margin: 0 0 4px 0;
-    color: $grey-2;
+    color: $color-text-secondary;
   }
   h3 {
-    font-size: .9em;
-    color: $grey-2;
+    font-size: 0.9rem;
+    color: $color-text-secondary;
   }
 }
 
