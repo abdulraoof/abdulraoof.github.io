@@ -14,6 +14,11 @@ $pad: 20px;
 }
 
 /* Content Wrappers */
+header {
+  grid-column: 4/10;
+}
+
+/* Content Wrappers */
 .content {
   display: grid;
   grid-template-columns: subgrid;
@@ -59,7 +64,7 @@ $pad: 20px;
 /* Readings Section */
 .readings_wrapper {
   display: grid;
-  grid-column: 3 / 11;
+  grid-column: 4 / 10;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: $pad;
 }
@@ -68,24 +73,32 @@ $pad: 20px;
 .bio_wrapper {
   display: grid;
   grid-template-columns: subgrid;
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   .bio {
-    grid-column: 4 / 10;
+    grid-column: 5 / 10;
   }
   .headshot {
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
   }  
 }
 
 .quotes_wrapper {
   display: grid;
   grid-template-columns: subgrid;
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
   blockquote {
-    grid-column: 4/10 ;
+    grid-column: 4 / 10 ;
   }
 }
 
+.works_wrapper {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  a {
+    grid-column: 4 / 10 ;
+  }
+}
 
 /* Global Element Positioning */
 h1, h2, h3, h4, h5,

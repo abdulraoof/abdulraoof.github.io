@@ -2,16 +2,15 @@
 ---
 
 // ==========================================================================
-// Imports
+// IMPORTS
 // ==========================================================================
-
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i,700|Merriweather:300,300i,400,400i,700');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 @import 'grid';
 
 // ==========================================================================
-// Variables
+// VARIABLES
 // ==========================================================================
 
 $font-primary: "Alegreya", serif;
@@ -26,9 +25,8 @@ $color-border-strong: #333;
 $color-background: #fff;
 $color-background-hover: #f5f5f5;
 
-
 // ==========================================================================
-// Base Styles
+// BASE STYLES
 // ==========================================================================
 
 html {
@@ -47,8 +45,34 @@ body {
   overflow-y: scroll;
 }
 
+// Global link styles
+a { 
+  text-decoration: none;
+  color: $color-text-secondary;
+
+  &:hover {
+    color: $color-text-secondary;
+  }
+}
+
+// Generic image styling
+img { 
+  width: 100%;
+}
+
+// Generic video styling
+video { 
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Generic section styling
+section { 
+  margin: 0;
+}
+
 // ==========================================================================
-// Typography
+// TYPOGRAPHY
 // ==========================================================================
 
 h1,
@@ -109,10 +133,6 @@ h6 {
   font-weight: 800;
 }
 
-// ==========================================================================
-// Paragraphs & Text Elements
-// ==========================================================================
-
 p {
   font-size: 1.3rem;
   margin-bottom: 1em;
@@ -121,18 +141,11 @@ p {
   @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
     font-size: 0.88rem;
   }
-
-  &.navigation {
-    font-family: $font-secondary;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-
-  a {
+// Links within paragraphs
+  a { 
     color: $color-text-primary;
     text-decoration: none;
-    border-bottom: 4px solid #ccc;
+    border-bottom: 2px solid #ccc;
     transition: all 0.15s ease 0s normal;
 
     &:hover {
@@ -146,27 +159,9 @@ p {
   }
 }
 
-.bio {
-  font-size: 1.5rem;
-}
-
-.headshot {
-  border-radius: 50%;
-}
-
-.lead {
-  font-size: 1.236rem;
-  margin-bottom: .6em;
-  line-height: 1.6;
-  font-style: italic;
-
-  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    font-size: 0.988rem;
-  }
-}
-
+// Base styling for small text and figure captions
 small,
-figcaption {
+figcaption { 
   font-size: 0.618rem;
   text-transform: uppercase;
   font-family: $font-secondary;
@@ -175,30 +170,15 @@ figcaption {
   color: $color-text-muted;
 }
 
-figcaption {
+// Additional base styling for figcaption
+figcaption { 
   text-align: center;
   color: $color-text-muted;
   margin-top: .5em;
 }
 
-a {
-  text-decoration: none;
-  color: $color-text-secondary;
-
-  &:hover {
-    color: $color-text-secondary;
-  }
-}
-
-.small-letter {
-  text-transform: lowercase;
-}
-
-// ==========================================================================
-// Lists
-// ==========================================================================
-
-ul {
+// Base list styling
+ul { 
   margin-bottom: 1em;
   list-style-type: disc;
   font-size: 1.1rem;
@@ -207,100 +187,51 @@ ul {
     font-size: 0.88rem;
   }
 
-  &.post-list {
-    list-style: none;
-
-    li {
-      padding-bottom: 20px;
-      padding-top: 20px;
-      border-bottom: 1px solid #eee;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      .post-date {
-        float: right;
-        color: $color-text-muted;
-      }
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
-
   li {
     padding-bottom: 8px;
   }
 }
 
 // ==========================================================================
-// Media Elements
+// LAYOUT
 // ==========================================================================
 
-img {
+header {
+  margin: 0 auto 2em auto;
+  border-bottom: 1px solid #eee;
   width: 100%;
 }
 
-.article-img {
-  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px) {
-    position: relative;
-    width: 70vw;
-    left: calc(-35vw + 50%);
-  }
-
-  margin: 1em 0 2em 0;
-
-  img {
-    border: 1px solid #eee;
-  }
-
-  border-bottom: 1px solid #eee;
-
-  figcaption {
-    margin-bottom: 2em;
-  }
+#logo { // Often part of the header
+  width: 100px;
+  height: 64px;
 }
 
-.article-img-small {
-  margin: 0 auto;
-  text-align: center;
-
-  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px) {
-    position: relative;
-    width: 35vw;
-  }
-
-  margin-bottom: 2em;
-
-  img {
-    border: 1px solid #eee;
-  }
-
-  border-bottom: 1px solid #eee;
-
-  figcaption {
-    margin-bottom: 2em;
-  }
-}
-
-video {
+footer {
+  margin: 2em auto 0 auto;
   width: 100%;
-  margin: 0 auto;
+  height: 100px;
+  align-content: center;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    margin-top: 1.5em;
+    width: 100%;
+  }
+
+  border-top: 1px solid $color-border-default;
+  color: $color-text-primary;
+
+  span {
+    @extend small;
+    font-weight: 400;
+  }
 }
 
 // ==========================================================================
-// Layout Elements
-// ==========================================================================
-section {
-  margin: 0;
-}
-
-// ==========================================================================
-// Navigation
+// COMPONENTS
 // ==========================================================================
 
+// Navigation Component
 .primary_navigation {
   font-family: $font-secondary;
   padding: 2em 0 .75em 0;
@@ -332,55 +263,87 @@ section {
   }
 }
 
-header {
-  margin: 0 auto 2em auto;
+// Post List Component
+ul.post-list { 
+  list-style: none;
+
+  li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .post-date {
+      float: right;
+      color: $color-text-muted;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// Article Image Components
+.article-img {
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px) {
+    position: relative;
+    width: 70vw;
+    left: calc(-35vw + 50%);
+  }
+
+  margin: 1em 0 2em 0;
+
+  img {
+    border: 1px solid #eee;
+  }
+
   border-bottom: 1px solid #eee;
-  grid-column: 4/10;
-  width: 100%;
-}
 
-#logo {
-  width: 100px;
-  height: 64px;
-}
-
-// ==========================================================================
-// Footer
-// ==========================================================================
-footer {
-  margin: 2em auto 0 auto;
-  width: 100%;
-
-  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
-    margin-top: 1.5em;
-    width: 100%;
-  }
-
-  border-top: 1px solid $color-border-default;
-  color: $color-text-primary;
-
-  span {
-    @extend small;
-    font-weight: 400;
+  figcaption {
+    margin-bottom: 2em;
   }
 }
 
-// ==========================================================================
-// Case Studies
-// ==========================================================================
-.works {
-  margin-top: 2em;
+.article-img-small {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+
+  @media only screen and (min-device-width : 800px) and (max-device-width : 1440px) {
+    position: relative;
+    width: 35vw;
+  }
+
+  img {
+    border: 1px solid #eee;
+  }
+
+  border-bottom: 1px solid #eee;
+  // Component-specific figcaption style
+  figcaption { 
+    margin-bottom: 2em;
+  }
 }
 
-.meta {
-  font-family: $font-secondary;
-  font-weight: 400;
-  font-size: 0.9rem;
+// Works/Case Studies Component
+
+.works_wrapper {
+  a {
+    margin-top: 2em;
+    &:hover {
+      background-color: $color-background-hover;
+    }
+  }
+  i {
+    padding-left: 0.2em;
+  }
 }
 
-// ==========================================================================
-// Quotes
-// ==========================================================================
+// Blockquote Component
 blockquote {
   margin: 2em 0 2em 0;
   font-weight: 400;
@@ -404,11 +367,8 @@ blockquote {
   }
 }
 
-// ==========================================================================
-// Books
-// ==========================================================================
-
-.readings_wrapper{
+// Books/Readings Component
+.readings_wrapper {
   .reading_link {
     text-decoration: none;
     &:hover {
@@ -419,7 +379,6 @@ blockquote {
 
 .reading {
   padding: 1em;
-  // height: 100%;
   display: flex;
   flex-direction: column;
   transition: background-color 0.2s ease;
@@ -456,4 +415,56 @@ blockquote {
     font-size: 0.9rem;
     color: $color-text-secondary;
   }
+}
+
+
+
+// ==========================================================================
+// UTILITIES / HELPER CLASSES
+// ==========================================================================
+
+.bio {
+  font-size: 1.5rem;
+
+}
+.text_gradient {
+  color: #2c3e50;
+  background: linear-gradient(135deg, #0039ff, #b300d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* For browsers that don't support background-clip: text */
+@supports not (-webkit-background-clip: text) {
+  .gradient-text {
+    color: $color-text-primary;
+  }
+}
+
+.headshot {
+  border-radius: 50%;
+}
+
+// Lead paragraph/text utility
+.lead { 
+  font-size: 1.236rem;
+  margin-bottom: .6em;
+  line-height: 1.6;
+  font-style: italic;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+    font-size: 0.988rem;
+  }
+}
+
+// Text transform utility
+.small-letter { 
+  text-transform: lowercase;
+}
+
+// Meta information text utility
+.meta { 
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 0.9rem;
 }
